@@ -6,17 +6,18 @@
     <title>Devine Taste</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="styles.css">
+  </head>
 <body>
     <header class="d-flex justify-content-between align-items-center p-3 sticky-top">
         <div class="d-flex gap-2 align-items-center">
-            <img src="dev-taste.jpg" alt="Devine Taste">
+            <img src="dev-taste.jpg" alt="Devine Taste" width="60">
             <h4>Devine Taste</h4>
         </div>
         <nav class="d-flex gap-3">
-            <a href="mission">Vision & Mission</a>
-            <a href="language">Language</a>
-            <a href="#pricing">Pricing</a>
+            <a href="#mission">Vision & Mission</a>
+            <a href="#languages">Language</a>
+            <a href="#Pricing">Pricing</a>
             <a href="#contact">Contact Us</a>
         </nav>
     </header>
@@ -37,7 +38,7 @@
     <div class="container mb-5 bg-light rounded-4" id="languages">
         
         <h1 class="display-5 text-center mb-4">Top candy favorites</h1>
-        <div class="d-flex justify-content-center align-items-center gap-4">
+        <div class="d-flex justify-content-center align-items-center gap-4" id="candyImg">
             <img src="sweet.jpg" alt="Sweet">
             <img src="sour.jpg" alt="Sour">
             <img src="chocolate.jpg" alt="Chocolate">
@@ -49,9 +50,9 @@
     </div>
     <div id="Pricing">
         <h1 class="display-5 text-center">Solutions & Pricing</h1>
-        <div id="row">
+        <div class="row">
 
-    <div class="col-md-6 col-lg-3"></div>
+    <div class="col-md-6 col-lg-3">
 <div class="card" style="width: 18rem;">
   <img src="sweet.jpg" class="card-img-top" alt="Sweet">
   <div class="card-body">
@@ -60,8 +61,8 @@
     <p class="btn btn-primary">$ 14.99</p>
   </div>
 </div>
-
-<div class="col-md-6 col-lg-3"></div>
+</div>
+<div class="col-md-6 col-lg-3">
 <div class="card" style="width: 18rem;">
   <img src="sour.jpg" class="card-img-top" alt="Sour">
   <div class="card-body">
@@ -70,8 +71,8 @@
     <p class="btn btn-primary">$ 14.99</p>
   </div>
 </div>
-
-<div class="col-md-6 col-lg-3"></div>
+</div>
+<div class="col-md-6 col-lg-3">
 <div class="card" style="width: 18rem;">
   <img src="chocolate.jpg" class="card-img-top" alt="Chocolate">
   <div class="card-body">
@@ -80,7 +81,7 @@
     <p class="btn btn-primary">$ 14.99</p>
   </div>
 </div>
-
+</div>
             <div class="col-md-6 col-lg-3">
                 <div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="Creamy">
@@ -90,8 +91,8 @@
     <p class="btn btn-primary">$ 14.99</p>
   </div>
 </div>
-
-<div class="col-md-6 col-lg-3"></div>
+</div>
+<div class="col-md-6 col-lg-3">
 <div class="card" style="width: 18rem;">
   <img src="nutty.jpg" class="card-img-top" alt="Nutty">
   <div class="card-body">
@@ -100,8 +101,8 @@
     <p class="btn btn-primary">$ 14.99</p>
   </div>
 </div>
-
-<div class="col-md-6 col-lg-3"></div>
+</div>
+<div class="col-md-6 col-lg-3">
 <div class="card" style="width: 18rem;">
   <img src="fruity.jpg" class="card-img-top" alt="Fruity">
   <div class="card-body">
@@ -110,8 +111,8 @@
     <p class="btn btn-primary">$ 14.99</p>
   </div>
 </div>
-
-<div class="col-md-6 col-lg-3"></div>
+</div>
+<div class="col-md-6 col-lg-3">
 <div class="card" style="width: 18rem;">
   <img src="gummy.jpg" class="card-img-top" alt="Gummy">
   <div class="card-body">
@@ -125,7 +126,7 @@
     </div>
     <div id="contact" class="container border rounded-2 p-4 mb-4">
         <h1 class="display-5">Contact Us</h1>
-
+<form>
         <div class="mb-3">
             <label for="contactName" class="form-label">Name</label>
             <input type="text" id="contactName" class="form-control">
@@ -140,10 +141,12 @@
   <textarea class="form-control" id="ContactMessage" rows="3"></textarea>
 </div>
 
-<buttom class="btn btn-primary">submit</buttom>
+<button class="btn btn-primary" onclick="saveData()">submit</button>
+</form>
     </div>
 <footer class="text-center">
     <p>&copy; 2025 Created by Brittany Hill</p>
 </footer>
+<script src="app.js"></script>
 </body>
 </html>
